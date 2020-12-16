@@ -1,7 +1,7 @@
 body, html{
     padding: 0;
     margin: 0;
-    background-image: url('bg.png');
+    background-image: url('media/bg.png');
     height: 100%;
     width: 100%;
     overflow-x: hidden;
@@ -124,10 +124,10 @@ header button{
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    padding: 15px 25px;
+    padding: 15px 20px;
     margin-right: -40%;
     border-radius: 5px;
     outline: none;
     border: none;
-    background-color: rgba(23, 146, 33, 0.774);
+    background-color: rgba(10, 109, 19, 0.774);
 }
