@@ -1,10 +1,16 @@
 body, html{
     padding: 0;
     margin: 0;
-    background-image: url('media/bg.png');
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    height: 8%;
+    background-color: rgba(255, 255, 255, 0.945);
+    position: fixed;
+    z-index: 3;
 }
 
 nav ul {
@@ -45,7 +51,7 @@ nav ul .logo{
     cursor: pointer;
     float: left;
     color: #000;
-    padding-right: 33%;
+    padding-right: 37%;
     position: relative;
     font-size: 19px;
     font-weight: 600;
@@ -56,7 +62,6 @@ nav ul .logo img{
     cursor: pointer;
     float: left;
     padding-top: 3%;
-    padding-left: 0.5%;
     height: 80%;
     width: 10%;
 }
@@ -64,12 +69,14 @@ nav ul .logo img{
 nav ul button{
     border-radius: 2em;
     border: none;
-    padding: 0 10px;
-    background-color: rgb(255, 108, 108);
+    padding: 2px 10px;
+    background-color: rgb(252, 107, 107);
+    letter-spacing: 0em;
     color: #fff;
     -webkit-transition: -webkit-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
-    font-weight: 700;
+    font-weight: 650;
+    font-size: 14px;
 }
 
 nav li:hover{
@@ -79,9 +86,13 @@ nav li:hover{
 /*Header*/
 header{
     column-count: 2;
+    background-image: url('media/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5%;
 }
 header .column-75{
-    padding-top: 5%;
+    padding-top: 6%;
     float: left;
     text-align: right;
 }
@@ -124,10 +135,70 @@ header button{
     color: #fff;
     font-size: 18px;
     font-weight: bold;
-    padding: 15px 20px;
+    padding: 13px 25px;
     margin-right: -40%;
     border-radius: 5px;
     outline: none;
     border: none;
-    background-color: rgba(10, 109, 19, 0.774);
+    background-color: rgba(12, 131, 22, 0.692);
 }
+
+/*Grids*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px 50px;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 20px;
+  }
+
+  /*Cards - Popular Courses*/
+  *{
+    box-sizing: border-box;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
