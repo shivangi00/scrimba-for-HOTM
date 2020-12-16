@@ -1,0 +1,133 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    background-image: url('bg.png');
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-top: 1%;
+    outline: none;
+}
+
+nav a{
+    color: #000;
+}
+
+nav a:hover{
+    color: #000;
+    outline: none;
+}
+
+nav .alogo:hover{
+    color: rgba(77, 119, 255, 0.863);
+    text-decoration: none;
+}
+
+nav .join:hover{
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+    transition: 0.04s ease-in-out;
+    outline: none;
+}
+
+nav ul :not(.logo){
+    float: right;
+    letter-spacing: 0.05em;
+    position: relative;
+}
+
+nav ul .logo{
+    cursor: pointer;
+    float: left;
+    color: #000;
+    padding-right: 33%;
+    position: relative;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+nav ul .logo img{
+    cursor: pointer;
+    float: left;
+    padding-top: 3%;
+    padding-left: 0.5%;
+    height: 80%;
+    width: 10%;
+}
+
+nav ul button{
+    border-radius: 2em;
+    border: none;
+    padding: 0 10px;
+    background-color: rgb(255, 108, 108);
+    color: #fff;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+    font-weight: 700;
+}
+
+nav li:hover{
+    cursor: pointer;
+}
+
+/*Header*/
+header{
+    column-count: 2;
+}
+header .column-75{
+    padding-top: 5%;
+    float: left;
+    text-align: right;
+}
+
+header .column-25{
+    float: right;
+}
+
+header .girl{
+    z-index: 1;
+    position: relative;
+    padding-top: 3%;
+    float: right;
+}
+
+header .person-sitting{
+    z-index: 2;
+    margin-right: -100%;
+    padding-top: 55%;
+    margin-left: 30%;
+    position: relative;
+}
+
+header h1{
+    font-size: 85px;
+    padding-bottom: 8%;
+    letter-spacing: 0.03em;
+    text-shadow: 0 1px 0 #fff, 0 1px 0 #fff, 
+    0 4px 0 #fff, 0 2px 0 #fff, 
+    0 4px 0 #fff, 0 4px 0 #fff, 
+    0 4px 0 #fff, 0 4px 0 #fff, 
+    0 4px 0 #fff, 0 2px 0 #fff, 
+    0 4px 0 #fff, 0 2px 0 #fff, 
+    10px 20px 20px rgba(161, 161, 161, 0.233); 
+    line-height: 90px;
+    margin-right: -40%;
+}
+
+header button{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-right: -40%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(23, 146, 33, 0.774);
+}
