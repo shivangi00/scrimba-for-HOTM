@@ -25,9 +25,9 @@
             <ul>
                 <li class="logo"><a class="alogo" href="#"><img src="media/logo.png" alt="logo">scrimba</a></li>
                 <li><a class="join" href="#"><button>Join the JS advent calendar&#x1f384;</button></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <li><a href="#"> All courses</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
-                <li><a href="#">Sign in</a></li>&nbsp;|&nbsp;&nbsp;
-                <li><a href="#">Sign up</a> </li>
+                <li><a class="nav-info" href="#"> All courses</a></li>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <li><a class="nav-info" href="#">Sign in</a></li>&nbsp;|&nbsp;&nbsp;
+                <li><a class="nav-info" href="#">Sign up</a> </li>
             </ul>
         </nav>
         <header>
@@ -58,45 +58,679 @@
                 </div>
             </div>
         </main>
-        <div class="pop_course">
+        <!--Popular Courses-->
+          <div class="pop_course">
             <section class="courses">
-                <h2>#Popular courses</h2>
-                <h3>Get started with these popular intro courses.</h3>
-                <div class="row">
+                <h2 style="text-decoration: underline;">#Popular courses</h2>
+                <h5 style="font-weight:normal;">Get started with these popular intro courses.</h5>
+                  <div class="row">
                     <div class="column">
                       <div class="card">
-                        <h3>Card 1</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <div class="name" style="background-color: #61af6d7a;">
+                          <h3>24 Days of #JavaScriptmas</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">33 lessons | 1 hour <br>with <span style="font-weight: bold;">Dylan C. Israel</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>
+                        </div>
                       </div>
                     </div>
                   
                     <div class="column">
                       <div class="card">
-                        <h3>Card 2</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h3>HTML & CSS Crash Course</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">30 lessons | 4 hour <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>  
+                        </div>
                       </div>
                     </div>
                     
                     <div class="column">
                       <div class="card">
-                        <h3>Card 3</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <div class="name" style="background-color: #a7cdf07a;">
+                          <h3>Learn React for free</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">58 lessons | 1 hour <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>
                       </div>
                     </div>
                     
                     <div class="column">
                       <div class="card">
-                        <h3>Card 4</h3>
-                        <p>Some text</p>
-                        <p>Some text</p>
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h3>Learn UI Design Fundamentals</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">15 lessons | 1 hour <br>with <span style="font-weight: bold;">null</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>                      
                       </div>
                     </div>
                   </div>
+                  <button>Show more</button>
             </section>
-        </div>
+          </div>
+        <!--Popular Courses Ends-->
+
+        <!--Bootcamps-->
+          <div class="bootcamps">
+            <section class="courses">
+                <h2 style="text-decoration: underline;">#Bootcamps</h2>
+                <h5 style="font-weight:normal;">Comprehensive courses on various topics</h5>
+                  <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <div class="name title" style="background-color: #61af6d7a;">
+                          <h4>The Frontend Developer Career Path</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">921 lessons | 15 min <br>with <span style="font-weight: bold;">Per Harald Borgen</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h4>The React Bootcamp</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">128 lessons | 12 hours <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Advanced</p> 
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name title" style="background-color: #a7cdf07a;">
+                          <h4>The Responsive Web Design Bootcamp</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">174 lessons | 15 hours <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h4>The UI Design Bootcamp</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">99 lessons | 8 hours <br>with <span style="font-weight: bold;">null</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                  <button>Show more</button>
+            </section>
+          </div>
+        <!--Bootcamps Ends-->
         
+        <!--Freebies Courses-->
+          <div class="freebies">
+            <section class="courses">
+                <h2 style="text-decoration: underline;">#Freebies</h2>
+                <h5 style="font-weight:normal;">High-quality Scrimba courses that doesn't cost a dime</h5>
+                  <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #61af6d7a;">
+                          <h3>HTML & CSS Crash Course</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">30 lessons | 4 hour <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h3>Learn React for free</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">58 lessons | 1 hour <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #a7cdf07a;">
+                          <h3>Learn UI Design Fundamentals</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">15 lessons | 1 hour <br>with <span style="font-weight: bold;">null</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h3>Learn Python for Free</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">58 lessons | 5 hours <br>with <span style="font-weight: bold;">Olof Paulson</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                  <button>Show more</button>
+            </section>
+          </div>
+        <!--Freebies Courses Ends-->
+
+        <!--ReactJS-->
+          <div class="reactjs">
+            <section class="courses">
+                <h2 style="text-decoration: underline;">#React.js</h2>
+                <h5 style="font-weight:normal;">Comprehensive courses on various topics</h5>
+                  <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <div class="name title" style="background-color: #61af6d7a;">
+                          <h4>The Frontend Developer Career Path</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">921 lessons | 15 min <br>with <span style="font-weight: bold;">Per Harald Borgen</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h4>The React Bootcamp</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">128 lessons | 12 hours <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Advanced</p> 
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name title" style="background-color: #a7cdf07a;">
+                          <h4>The Responsive Web Design Bootcamp</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">174 lessons | 15 hours <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h4>The UI Design Bootcamp</h4>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">99 lessons | 8 hours <br>with <span style="font-weight: bold;">null</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                  <button>Show more</button>
+            </section>
+          </div>
+        <!--ReactJS Ends-->
+        
+        <!--VueJS Courses-->
+          <div class="vuejs" style="background-color: rgba(210, 240, 210, 0.884);">
+            <section class="courses">
+                <h2 style="text-decoration: underline;">#Vue.js</h2>
+                <h5 style="font-weight:normal;">High-quality Scrimba courses that doesn't cost a dime</h5>
+                  <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #61af6d7a;">
+                          <h3>HTML & CSS Crash Course</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">30 lessons | 4 hour <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h3>Learn React for free</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">58 lessons | 1 hour <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>  
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #a7cdf07a;">
+                          <h3>Learn UI Design Fundamentals</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">15 lessons | 1 hour <br>with <span style="font-weight: bold;">null</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Intermediate</p> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+                      <div class="card">
+                        <div class="name" style="background-color: #e7be9f80;">
+                          <h3>Learn Python for Free</h3>
+                        </div>
+                        <div class="card-content">
+                          <div class="content">
+                            <p style="font-size:12px;">58 lessons | 5 hours <br>with <span style="font-weight: bold;">Olof Paulson</span></p>
+                          </div>
+                          <div class="level">
+                            <p style="font-size: 11px;">Beginner</p> 
+                          </div>
+                        </div>                      
+                      </div>
+                    </div>
+                  </div>
+                  <button>Show more</button>
+            </section>
+          </div>
+        <!--VueJS Courses Ends-->
+
+        <!--JS-->
+        <div class="js">
+          <section class="courses">
+              <h2 style="text-decoration: underline;">#JavaScript</h2>
+              <h5 style="font-weight:normal;">JavaScript is the worlds most popular programming language</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The React Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">128 lessons | 12 hours <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Advanced</p> 
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #61af6d7a;">
+                        <h4>The Frontend Developer Career Path</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">921 lessons | 15 min <br>with <span style="font-weight: bold;">Per Harald Borgen</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Beginner</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="column">
+                    <div class="card">
+                      <div class="name" style="background-color: #a7cdf07a;">
+                        <h3>The JavaScript Bootcamp</h3>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">174 lessons | 15 hours <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The UI Design Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">99 lessons | 8 hours <br>with <span style="font-weight: bold;">null</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+                <button>Show more</button>
+          </section>
+        </div>
+      <!--JS Ends-->
+      
+      <!--Frontend-->
+        <div class="frontend" style="background-color: #fff;">
+          <section class="courses">
+              <h2 style="text-decoration: underline;">#Frontend</h2>
+              <h5 style="font-weight:normal;">JavaScript is the worlds most popular programming language</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The React Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">128 lessons | 12 hours <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Advanced</p> 
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #61af6d7a;">
+                        <h4>The Frontend Developer Career Path</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">921 lessons | 15 min <br>with <span style="font-weight: bold;">Per Harald Borgen</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Beginner</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="column">
+                    <div class="card">
+                      <div class="name" style="background-color: #a7cdf07a;">
+                        <h3>The JavaScript Bootcamp</h3>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">174 lessons | 15 hours <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The UI Design Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">99 lessons | 8 hours <br>with <span style="font-weight: bold;">null</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+                <button>Show more</button>
+          </section>
+        </div>
+      <!--Frontend Ends-->
+      
+      <!--CSS-->
+        <div class="css">
+          <section class="courses">
+              <h2 style="text-decoration: underline;">#CSS</h2>
+              <h5 style="font-weight:normal;">JavaScript is the worlds most popular programming language</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The React Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">128 lessons | 12 hours <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Advanced</p> 
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #61af6d7a;">
+                        <h4>The Frontend Developer Career Path</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">921 lessons | 15 min <br>with <span style="font-weight: bold;">Per Harald Borgen</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Beginner</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="column">
+                    <div class="card">
+                      <div class="name" style="background-color: #a7cdf07a;">
+                        <h3>The JavaScript Bootcamp</h3>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">174 lessons | 15 hours <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The UI Design Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">99 lessons | 8 hours <br>with <span style="font-weight: bold;">null</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+                <button>Show more</button>
+          </section>
+        </div>
+      <!--CSS Ends-->
+
+      <!--HTML-->
+        <div class="html" style="background-color: #fff;">
+          <section class="courses">
+              <h2 style="text-decoration: underline;">#HTML</h2>
+              <h5 style="font-weight:normal;">JavaScript is the worlds most popular programming language</h5>
+                <div class="row">
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The React Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">128 lessons | 12 hours <br>with <span style="font-weight: bold;">Bob Ziroll</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Advanced</p> 
+                        </div>  
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #61af6d7a;">
+                        <h4>The Frontend Developer Career Path</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">921 lessons | 15 min <br>with <span style="font-weight: bold;">Per Harald Borgen</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Beginner</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="column">
+                    <div class="card">
+                      <div class="name" style="background-color: #a7cdf07a;">
+                        <h3>The JavaScript Bootcamp</h3>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">174 lessons | 15 hours <br>with <span style="font-weight: bold;">Kevin Powell</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="column">
+                    <div class="card">
+                      <div class="name title" style="background-color: #e7be9f80;">
+                        <h4>The UI Design Bootcamp</h4>
+                      </div>
+                      <div class="card-content">
+                        <div class="content">
+                          <p style="font-size:12px;">99 lessons | 8 hours <br>with <span style="font-weight: bold;">null</span></p>
+                        </div>
+                        <div class="level">
+                          <p style="font-size: 11px;">Intermediate</p> 
+                        </div>
+                      </div>                      
+                    </div>
+                  </div>
+                </div>
+                <button>Show more</button>
+          </section>
+        </div>
+      <!--HTML Ends-->
     </body>
     </html>
