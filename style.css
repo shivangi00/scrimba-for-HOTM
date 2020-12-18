@@ -349,4 +349,102 @@ body, html{
         border-top-right-radius: 100% 20px;
     };
 
+/*Discord*/
 
+/* Float four columns side by side */
+.col {
+    width: 100%;
+    padding: 40px 10px;
+    justify-content: space-between;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-discord {
+    margin: 0px 40px;
+    align-items: center;
+}
+
+/* Clear floats after the columns */
+.row-discord:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.light-coral{
+    padding-top: 30px;
+    padding-left: 16%;
+    z-index: 0;
+}
+
+.coral{
+    margin-top: -29%;
+    padding-left: 27%;
+    z-index: 1;
+}
+
+.discord-content{
+    margin-top: -29%;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.discord-content button{
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 15px 25px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.crowd{
+    padding-left: 15%;
+}
+
+#footer{
+    padding: 40px;
+    background-color:rgba(255, 242, 226, 0.884);
+    border-top-left-radius: 100% 20px;
+    border-top-right-radius: 100% 20px;
+}
+
+.grid{
+    display: grid;
+    grid-auto-columns: 1fr;
+}
+
+.fsection1 img{
+    height: 25px;
+    width: 150px;
+}
+.fsection{
+    z-index: 1;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 20px;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.fsection a{
+    color: #000;
+}
+
+.fsection1, .fsection2, .fsection3, .fsection4{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+    padding-left: 10vh;
+    padding-right: 20vh;
+    line-height: 10vh;
+}
+
+.fsection1{
+    padding-right: 40vh;
+    text-align: left;
+}
