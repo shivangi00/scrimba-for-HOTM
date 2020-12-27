@@ -229,20 +229,12 @@ body, html{
         clear: both;
     }
     
-    /* Responsive columns */
-    @media screen and (max-width: 600px) {
-        .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-        }
-    }
-    
     /* Style the counter cards */
     .card {
         box-shadow: 0 1px 2px 0 rgba(48, 48, 48, 0.363);
         border-radius: 6px;
         border: none;
+        justify-content: space-between;
     }
 
     .name{
@@ -447,4 +439,21 @@ body, html{
 .fsection1{
     padding-right: 40vh;
     text-align: left;
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+    width: 150%;
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    display: block;
+    margin-bottom: 15px;
+    }        
+
+    .card-content h3{
+        font-size: small;
+    }
 }
