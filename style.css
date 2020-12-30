@@ -23,6 +23,10 @@ body, html{
         outline: none;
     }
 
+    nav select {
+        display: none;
+    }
+
     nav a{
         color: #000;
     }
@@ -32,7 +36,7 @@ body, html{
         outline: none;
     }
 
-    nav .alogo:hover{
+    nav .logo:hover{
         color: rgba(77, 119, 255, 0.863);
         text-decoration: none;
     }
@@ -44,13 +48,13 @@ body, html{
         outline: none;
     }
 
-    nav ul :not(.logo){
+    nav ul{
         float: right;
         letter-spacing: 0.05em;
         position: relative;
     }
 
-    nav ul .logo{
+    nav .logo{
         cursor: pointer;
         float: left;
         color: #000;
@@ -61,7 +65,7 @@ body, html{
         letter-spacing: 0.05em;
     }
 
-    nav ul .logo img{
+    nav .logo img{
         cursor: pointer;
         float: left;
         padding-top: 3%;
@@ -444,6 +448,72 @@ body, html{
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
+    nav ul{
+        display: none;
+    }
+    
+    nav .logo{
+        cursor: pointer;
+        float: left;
+        color: #000;
+        padding: 0px;
+        width: 120px;
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+    }
+
+    nav .logo img{
+        cursor: pointer;
+        float: left;
+        margin-top: 3%;
+        height: 80%;
+        width: 23%;
+    }
+    nav select { 
+        display: inline-block; 
+        margin-top: 1%;
+        position: relative;
+        margin-left: 52%;
+    }
+
+    header .column-25{
+        display: none;
+    }
+
+    header .column-75{
+        width: 70%;
+        height: 100%;
+        padding: 55px 0px 0px 0px;
+    }
+
+    header h1{
+        font-size: 70px;
+    }
+
+    header{
+        column-count: 1;
+        height: 700px;
+        width: 100%;
+    }
+    
+    header button{
+        color: #fff;
+        float: right;
+        margin-left: 10%;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        background-color: rgba(12, 131, 22, 0.692);
+    }
+
+    .grid-container .item1{
+        display: none;
+    }
+
     .column {
     width: 150%;
     margin: 0;
@@ -456,4 +526,53 @@ body, html{
     .card-content h3{
         font-size: small;
     }
+
+    .light-coral{
+        padding-top: 40px;
+        padding-bottom: -60%;
+        margin-left: -20%;
+        margin-bottom: -90%;
+        width: 120%;
+        z-index: 0;
+    }
+    
+    .coral{
+        width: 80%;
+        margin-top: 38%;
+        padding-left: 70px;
+        z-index: 1;
+    }
+
+    .discord-content{
+        margin-top: -66%;
+    }
+
+    .crowd{
+        padding: 0px;
+        width: 100%;
+    }
+
+    .grid{
+        display: grid;
+        grid-auto-columns: 0.4fr;
+    }
+
+    .fsection h5{
+        font-size: medium;
+    }
+    .fsection1, .fsection2, .fsection3, .fsection4{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-left: 2vh;
+        padding-right: 3vh;
+        font-size: small;
+    }
+
+    .fsection1{
+        text-align: left;
+        margin-left: -8vh;
+    }
+    
 }
